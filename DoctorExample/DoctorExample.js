@@ -126,6 +126,7 @@ app.delete('/', (req,res) => {
     }
     
 });
+
 function isThereAtleastOneUnhealthyKidney() {
 
     let atleastOneUnhealthyKidney = false;

@@ -83,7 +83,7 @@ app2.get("/health-checkup2", function (req, res) {
 
         res.status(411).json({
 
-            msg: "wrong inputs for kidneyId"
+            msg: "wrong inputs for kidneyID"
 
         });
         return;
@@ -110,7 +110,7 @@ app2.put("/replace-kidney", function (req, res) {
 
         res.status(411).json({
 
-            msg: "wrong inputs for kidneyId"
+            msg: "wrong inputs for kidneyID"
 
         });
         return;

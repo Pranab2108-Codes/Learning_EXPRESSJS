@@ -38,7 +38,7 @@ app.get('/', (req,res) => {
     const numberOfUnhealthyKidneys = totalNumberOfKidneys - numberOfHealthyKidneys ;
     res.json({                                                                        /* It's a short form of writting the whole key: value pair manner. */
 
-        steveKidneys,
+        steveKidneys,                                                                 /* But here we can clearly see we have used the variable names which is defined in our code only, if we ever want to put like req.headers it won't work because it is an expression not a variable. */
         totalNumberOfKidneys,
         numberOfHealthyKidneys,
         numberOfUnhealthyKidneys

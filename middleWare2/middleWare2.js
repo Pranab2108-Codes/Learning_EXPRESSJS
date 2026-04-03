@@ -30,6 +30,8 @@ app1.listen(3000);
 
 const app2 = express();
 let numberOfRequests = 0;
+
+
 function calculateNumberOfRequests(req,res,next){
 
     numberOfRequests++;
@@ -54,6 +56,8 @@ app2.listen(3001);
 
 
 const app3 = express();
+
+
 app3.use(calculateNumberOfRequests);                                                                /* We can call this calculateNumberOfRequests inside of the app.use() also when we get to know this middleWare will be called in each and every route, whatever coming below of it. */
 
 app3.get('/calculateRequests3', (req,res) => {
